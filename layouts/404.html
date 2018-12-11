@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+{{ partial "head.html" . }}
+
+<body class="doc-body">
+  <a class="sr-only sr-only-focusable doc-skip" href="#doc-main-h1">
+    <div class="container">
+      <span class="doc-skip-text">Skip to main content</span>
+    </div>
+  </a>
+  <header class="navbar navbar-dark d-lg-none fixed-top toolbar-waterfall">
+    <button aria-controls="doc-navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler mr-3"
+      data-breakpoint="lg" data-target="#doc-navdrawer" data-toggle="navdrawer" data-type="permanent"><span class="navbar-toggler-icon"></span></button>
+    <a aria-label="Daemonite Material" class="mr-auto doc-logo" href="/material/">M</a>
+    <!-- <div class="ml-3">
+      <div class="dropdown">
+        <button aria-expanded="false" aria-haspopup="true" class="navbar-toggler" data-toggle="dropdown" id="doc-dropdown-follow"
+          type="button"><i class="material-icons mx-auto">more_vert</i></button>
+        <div aria-labelledby="doc-dropdown-follow" class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="https://github.com/Daemonite/material" target="_blank"><i class="material-icons mr-3">code</i>Fork
+            me on GitHub</a>
+          <a class="dropdown-item" href="http://www.daemon.com.au/" target="_blank"><i class="material-icons mr-3 text-danger">favorite</i>Made
+            by Daemon</a>
+        </div>
+      </div>
+    </div> -->
+  </header>
+  {{ partial "menubar.html" . }}
+  <div class="jumbotron jumbotron-fluid mb-5 px-lg-3 doc-jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9">
+          <h1 class="typography-display-2" id="doc-main-h1">ページが見つかりません</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="doc-main px-lg-3">
+    <div class="container">
+      <p>指定したURLのページが存在しません。</p>
+    </div>
+  </main>
+
+</body>
+{{ partial "footer.html" . }}
+</html>

@@ -1,0 +1,71 @@
+<div aria-hidden="true" class="navdrawer navdrawer-permanent-lg doc-navdrawer" id="doc-navdrawer" tabindex="-1">
+    <div class="navdrawer-content">
+        <div class="d-flex flex-column doc-navdrawer-body">
+            <div class="navdrawer-header">
+                <a aria-label="Daemonite Material" class="doc-logo" href="{{ .Site.BaseURL }}">M</a>
+                <span class="navbar-brand">部活クラウド</span>
+            </div>
+            <form class="navdrawer-body mt-2">
+                <div class="floating-label textfield-box">
+                    <label for="doc-search">Search</label>
+                    <input aria-label="Search" autocomplete="off" data-siteurl="http://daemonite.github.io" class="form-control doc-search"
+                        id="doc-search" type="search">
+                </div>
+                <button class="sr-only" type="submit">Search documentation</button>
+            </form>
+            <div class="navdrawer-divider mb-0"></div>
+            <nav class="navdrawer-nav">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc-navdrawer-components"><strong>{{ .Name }}</strong></a>
+                {{ if .HasChildren }}
+                <div class="collapse pb-2 {{ if $currentPage.IsMenuCurrent "main" . }}active{{ else if $currentPage.HasMenuCurrent "main" . }}show{{ end }}" id="doc-navdrawer-components">
+                    {{ range .Children }}
+                    <a class="nav-item nav-link pl-4 py-2 {{ if $currentPage.IsMenuCurrent "main" . }}active{{ else if $currentPage.HasMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}"><span
+                            class="font-weight-normal">{{ .Name }}</span></a>
+                    {{ end }}
+                </div>
+                {{end}}
+                {{end}}
+
+                <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc-navdrawer-content"><strong>学校分類</strong></a>
+                <div class="collapse pb-2 " id="doc-navdrawer-content">
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/content/code/"><span
+                            class="font-weight-normal">小学校-U12</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/content/figures/"><span
+                            class="font-weight-normal">中学校-U15</span></a>
+                </div>
+                <div class="navdrawer-divider"></div>
+                <a class="nav-item nav-link " data-toggle="collapse" href="#doc-navdrawer-material"><strong>Material</strong></a>
+                <div class="collapse pb-2" id="doc-navdrawer-material">
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/pickers/"><span
+                            class="font-weight-normal">Pickers</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/progress/"><span
+                            class="font-weight-normal">Progress</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/selection-controls/"><span
+                            class="font-weight-normal">Selection controls</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/snackbars/"><span
+                            class="font-weight-normal">Snackbars</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/steppers/"><span
+                            class="font-weight-normal">Steppers</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/tabs/"><span class="font-weight-normal">Tabs</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/text-fields/"><span
+                            class="font-weight-normal">Text fields</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/toolbars/"><span
+                            class="font-weight-normal">Toolbars</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/tooltips/"><span
+                            class="font-weight-normal">Tooltips</span></a>
+                    <a class="nav-item nav-link pl-4 py-2 text-black-secondary" href="/material/docs/4.1/material/typography/"><span
+                            class="font-weight-normal">Typography</span></a>
+                </div>
+            </nav>
+            <div class="mt-auto">
+                <div class="navdrawer-divider mt-0"></div>
+                <div class="navdrawer-nav">
+                    <a class="nav-item nav-link text-black-secondary" href="https://github.com/Daemonite/material"
+                        target="_blank">お問合せ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

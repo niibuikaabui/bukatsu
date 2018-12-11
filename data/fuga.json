@@ -1,0 +1,26 @@
+{
+"softtennis": {
+    "name" : "ソフトテニス",
+    "url" : "/images/sports/tennis_s.jpg"
+},
+"volleyball": {
+    "name": "バレーボール",
+    "url": "/images/sports/tennis_s.jpg"
+},
+"volleyball1": {
+    "name": "サッカー",
+    "url": "/images/sports/tennis_s.jpg"
+},
+"volleyball2": {
+    "name": "野球",
+    "url": "/images/sports/tennis_s.jpg"
+},
+"volleyball3": {
+    "name": "水泳",
+    "url": "/images/sports/tennis_s.jpg"
+},
+"volleyball4": {
+    "name": "バレーボール",
+    "url": "/images/sports/tennis_s.jpg"
+}
+}

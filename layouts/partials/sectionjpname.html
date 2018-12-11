@@ -1,0 +1,8 @@
+{{ $s := .Title }}
+{{ if eq $s "Softtennis" }}
+ソフトテニス
+{{ else if eq .Title "Volleyball" }}
+バレーボール
+{{ else }}
+{{ $s }} なし
+{{ end }}

@@ -1,0 +1,64 @@
+baseURL = "http://localhost:1313"
+# baseURL = "https://www.okinawa-dso.com/bukatsu"
+languageCode = "ja"
+title = "My New Hugo Site"
+dateFormat = "2006/1/2/"
+
+[menu]
+
+[[menu.main]]
+identifier = "jhclub"
+name = "中学校部活"
+url = "/blog/"
+weight = -110
+
+[[menu.main]]
+identifier = "jhsofttennis"
+name = "ソフトテニス"
+url = "/softtennis/"
+weight = -200
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "jhvolleyball"
+name = "バレーボール"
+url = "/volleyball/"
+weight = -140
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "handball"
+name = "バレーボール"
+url = "/handball/"
+weight = -150
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "badminton"
+name = "バドミントン"
+url = "/badminton/"
+weight = -160
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "basketball"
+name = "バスケットボール"
+url = "/basketball/"
+weight = -160
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "tabletennis"
+name = "卓球"
+url = "/tabletennis/"
+weight = -160
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "softball"
+name = "ソフトボール"
+url = "/softball/"
+weight = -160
+parent = "jhclub"
+
+# 陸上、水泳、サッカー、軟式野球、新体操、剣道、柔道、相撲、スキー、スケート、駅伝

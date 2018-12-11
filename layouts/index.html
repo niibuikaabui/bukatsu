@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+{{ partial "head.html" . }}
+
+<body class="doc-body">
+  <a class="sr-only sr-only-focusable doc-skip" href="#doc-main-h1">
+    <div class="container">
+      <span class="doc-skip-text">Skip to main content</span>
+    </div>
+  </a>
+  <header class="navbar navbar-dark d-lg-none fixed-top toolbar-waterfall">
+    <button aria-controls="doc-navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler mr-3"
+      data-breakpoint="lg" data-target="#doc-navdrawer" data-toggle="navdrawer" data-type="permanent"><span class="navbar-toggler-icon"></span></button>
+    <a aria-label="Daemonite Material" class="mr-auto doc-logo" href="/material/">M</a>
+    <!-- <div class="ml-3">
+      <div class="dropdown">
+        <button aria-expanded="false" aria-haspopup="true" class="navbar-toggler" data-toggle="dropdown" id="doc-dropdown-follow"
+          type="button"><i class="material-icons mx-auto">more_vert</i></button>
+        <div aria-labelledby="doc-dropdown-follow" class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="https://github.com/Daemonite/material" target="_blank"><i class="material-icons mr-3">code</i>Fork
+            me on GitHub</a>
+          <a class="dropdown-item" href="http://www.daemon.com.au/" target="_blank"><i class="material-icons mr-3 text-danger">favorite</i>Made
+            by Daemon</a>
+        </div>
+      </div>
+    </div> -->
+  </header>
+  {{ partial "menubar.html" . }}
+  <div class="jumbotron jumbotron-fluid mb-5 px-lg-3 doc-jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9">
+          <h1 class="typography-display-2" id="doc-main-h1">部活クラウド</h1>
+          <p class="font-weight-light typography-title">部活情報をまとめるwebサイト</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="doc-main px-lg-3">
+    <div class="container">
+      <h2>部活選択</h2>
+      <div class="row justify-content-center">
+        <div class="card-deck">
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="{{ .Site.BaseURL }}/images/sports/tennis_s.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="{{ .Site.BaseURL }}/images/sports/tennis_s.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="{{ .Site.BaseURL }}/images/sports/tennis_s.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="{{ .Site.BaseURL }}/images/sports/tennis_s.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="{{ .Site.BaseURL }}/images/sports/tennis_s.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- <div class="col-xl-9"> -->
+        <div class="col">
+          <div class="bd-content mb-5">
+            <h2>部活選択</h2>
+            <button type="button" class="btn btn-light btn-lg">ソフトテニス</button>
+            <button type="button" class="btn btn-light btn-lg">野球</button>
+            <button type="button" class="btn btn-light btn-lg">バスケットボール</button>
+            <p>紹介文は省略</p>
+            <!-- <div class="bd-example bd-example-tabs"> -->
+              <ul class="nav nav-justified nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a aria-controls="home" aria-selected="true" class="active nav-link show" data-toggle="tab" href="#home"
+                    id="home-tab" role="tab">概要</a>
+                </li>
+                <li class="nav-item">
+                  <a aria-controls="profile" aria-selected="false" class="nav-link" data-toggle="tab" href="#profile"
+                    id="profile-tab" role="tab">試合結果</a>
+                </li>
+                <!-- <li class="nav-item">
+                <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#contact" id="contact-tab" role="tab">Contact</a>
+                </li> -->
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div aria-labelledby="home-tab" class="tab-pane active fade show" id="home" role="tabpanel">
+                  <p>１　目　　的<br>
+                    この大会は、中学校教育の一環として中学校生徒に広くソフトテニス実践の機会を与え、技能の向上とアマチュアスポーツ精神の高揚をはかり、心身ともに健康な中学校生徒を育成するとともに、中学校生徒の相互の親睦をはかるものである。</p>
+                  <p>２　主　　催<br>
+                    (公財)日本中学校体育連盟 (公財)日本ソフトテニス連盟 広島県教育委員会 尾道市教育委員会</p>
+                  <p>３　主　　管<br>
+                    中国中学校体育連盟 広島県中学校体育連盟 広島県ソフトテニス連盟 南部地区中学校体育連盟 尾道市中学校体育連盟</p>
+                </div>
+                <div aria-labelledby="profile-tab" class="tab-pane fade" id="profile" role="tabpanel">
+                  <!-- <div class="bd-example"> -->
+                    <div class="list-group" id="accordionOne">
+                      <div class="expansion-panel list-group-item">
+                        <a aria-controls="collapseOne" aria-expanded="false" class="expansion-panel-toggler collapsed" data-toggle="collapse"
+                          href="#collapseOne" id="headingOne">
+                          男子団体決勝
+                          <div class="expansion-panel-icon ml-3 text-black-secondary">
+                            <i class="collapsed-show material-icons">keyboard_arrow_down</i>
+                            <i class="collapsed-hide material-icons">keyboard_arrow_up</i>
+                          </div>
+                        </a>
+                        <div aria-labelledby="headingOne" class="collapse" data-parent="#accordionOne" id="collapseOne">
+                          <div class="expansion-panel-body">
+                            <!-- <div class="container"> -->
+                              <div class="row border bg-success text-white">
+                                <div class="col text-center">1回戦</div>
+                              </div>
+                              <div class="row border-bottom">
+                                <div class="col px-1 text-center">
+                                  岩見沢市立広陵中学校<br>（どこどこの・つよいがっこう）
+                                </div>
+                                <div class="col-2 px-1 text-center">
+                                  ２－１
+                                </div>
+                                <div class="col px-1 text-center">
+                                  江別市立江別中学校<br>（北海道・なんちゃら市）
+                                </div>
+                              </div>
+                              <div class="row border-bottom">
+                                <div class="col px-1 text-center">
+                                  森吉<br>（東北・秋田）
+                                </div>
+                                <div class="col-2 px-1 text-center">
+                                  ２－１
+                                </div>
+                                <div class="col px-1 text-center">
+                                  江別市立江別中学校<br>（北海道・なんちゃら市）
+                                </div>
+                              </div>
+                              <div class="row border bg-success text-white">
+                                <div class="col text-center">2回戦</div>
+                              </div>
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expansion-panel list-group-item">
+                        <a aria-controls="collapseTwo" aria-expanded="false" class="expansion-panel-toggler collapsed" data-toggle="collapse"
+                          href="#collapseTwo" id="headingTwo">
+                          女子団体決勝
+                          <div class="expansion-panel-icon ml-3 text-black-secondary">
+                            <i class="collapsed-show material-icons">keyboard_arrow_down</i>
+                            <i class="collapsed-hide material-icons">keyboard_arrow_up</i>
+                          </div>
+                        </a>
+                        <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionOne" id="collapseTwo">
+                          <div class="expansion-panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expansion-panel list-group-item">
+                        <a aria-controls="collapseThree" aria-expanded="false" class="expansion-panel-toggler collapsed" data-toggle="collapse"
+                          href="#collapseThree" id="headingThree">
+                          男子団体予選
+                          <div class="expansion-panel-icon ml-3 text-black-secondary">
+                            <i class="collapsed-show material-icons">keyboard_arrow_down</i>
+                            <i class="collapsed-hide material-icons">keyboard_arrow_up</i>
+                          </div>
+                        </a>
+                        <div aria-labelledby="headingThree" class="collapse" data-parent="#accordionOne" id="collapseThree">
+                          <div class="expansion-panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expansion-panel list-group-item">
+                        <a aria-controls="collapseFour" aria-expanded="false" class="expansion-panel-toggler collapsed" data-toggle="collapse"
+                          href="#collapseFour" id="headingFour">
+                          男子団体予選
+                          <div class="expansion-panel-icon ml-3 text-black-secondary">
+                            <i class="collapsed-show material-icons">keyboard_arrow_down</i>
+                            <i class="collapsed-hide material-icons">keyboard_arrow_up</i>
+                          </div>
+                        </a>
+                        <div aria-labelledby="headingFour" class="collapse" data-parent="#accordionOne" id="collapseFour">
+                          <div class="expansion-panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <!-- <div aria-labelledby="contact-tab" class="tab-pane fade" id="contact" role="tabpanel">
+                  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                    retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft
+                    beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy
+                    irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free,
+                    carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't
+                    heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                </div> -->
+              </div>
+            <!-- </div> -->
+
+          </div>
+        <!-- </div>
+        <div class="col-xl-3 d-none d-xl-block">
+          <ul class="section-nav">
+            <li class="toc-entry toc-h2"><a href="#default-tabs">Default tabs</a></li>
+            <li class="toc-entry toc-h2"><a href="#fixed-tabs">Fixed tabs</a></li>
+            <li class="toc-entry toc-h2"><a href="#scrollable-tabs">Scrollable tabs</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+{{ partial "footer.html" . }}
+</html>
