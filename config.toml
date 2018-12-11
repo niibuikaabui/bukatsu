@@ -1,4 +1,5 @@
-baseURL = "http://localhost:1313"
+#baseURL = "http://localhost:1313"
+baseURL = "https://cocky-euler-473339.netlify.com/"
 # baseURL = "https://www.okinawa-dso.com/bukatsu"
 languageCode = "ja"
 title = "My New Hugo Site"
