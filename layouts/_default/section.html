@@ -9,11 +9,8 @@
             <span class="doc-skip-text">Skip to main content</span>
         </div>
     </a>
-    <header class="navbar navbar-dark d-lg-none fixed-top toolbar-waterfall">
-        <button aria-controls="doc-navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler mr-3"
-            data-breakpoint="lg" data-target="#doc-navdrawer" data-toggle="navdrawer" data-type="permanent"><span class="navbar-toggler-icon"></span></button>
-        <a aria-label="Daemonite Material" class="mr-auto doc-logo" href="/material/">M</a>
-    </header>
+    {{ partial "header.html" . }}
+    
     {{ partial "menubar.html" . }}
     <div class="jumbotron jumbotron-fluid mb-5 px-lg-3 doc-jumbotron">
         <div class="container">

@@ -2,7 +2,7 @@
 baseURL = "https://bukatsu-cloud.netlify.com/"
 # baseURL = "https://www.okinawa-dso.com/bukatsu"
 languageCode = "ja"
-title = "My New Hugo Site"
+title = "部活クラウド"
 dateFormat = "2006/1/2/"
 
 [menu]
