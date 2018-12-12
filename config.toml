@@ -14,52 +14,114 @@ url = "/blog/"
 weight = -110
 
 [[menu.main]]
-identifier = "jhsofttennis"
+identifier = "jh_softtennis"
 name = "ソフトテニス"
-url = "/softtennis/"
+url = "/jh_softtennis/"
+pre = "/images/sportsicon128/56.png"
 weight = -200
 parent = "jhclub"
 
 [[menu.main]]
-identifier = "jhvolleyball"
+identifier = "jh_volleyball"
 name = "バレーボール"
-url = "/volleyball/"
+url = "/jh_volleyball/"
+pre = "/images/sportsicon128/8.png"
 weight = -140
 parent = "jhclub"
 
 [[menu.main]]
-identifier = "handball"
-name = "バレーボール"
-url = "/handball/"
+identifier = "jh_handball"
+name = "ハンドボール"
+url = "/jh_handball/"
+pre = "/images/sportsicon128/40.png"
 weight = -150
 parent = "jhclub"
 
 [[menu.main]]
-identifier = "badminton"
+identifier = "jh_badminton"
 name = "バドミントン"
-url = "/badminton/"
+url = "/jh_badminton/"
+pre = "/images/sportsicon128/13.png"
 weight = -160
 parent = "jhclub"
 
 [[menu.main]]
-identifier = "basketball"
+identifier = "jh_basketball"
 name = "バスケットボール"
-url = "/basketball/"
+url = "/jh_basketball/"
+pre = "/images/sportsicon128/6.png"
 weight = -160
 parent = "jhclub"
 
 [[menu.main]]
-identifier = "tabletennis"
+identifier = "jh_tabletennis"
 name = "卓球"
-url = "/tabletennis/"
+url = "/jh_tabletennis/"
+pre = "/images/sportsicon128/19.png"
 weight = -160
 parent = "jhclub"
 
 [[menu.main]]
-identifier = "softball"
+identifier = "jh_softball"
 name = "ソフトボール"
-url = "/softball/"
-weight = -160
+url = "/jh_softball/"
+pre = "/images/sportsicon128/10.png"
+weight = -100
 parent = "jhclub"
 
+[[menu.main]]
+identifier = "jh_soccer"
+name = "サッカー"
+url = "/jh_soccer/"
+pre = "/images/sportsicon128/5.png"
+weight = -100
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "jh_soft-baseball"
+name = "軟式野球"
+url = "/jh_soft-baseball/"
+pre = "/images/sportsicon128/7.png"
+weight = -100
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "jh_gymnastics"
+name = "体操競技"
+url = "/jh_gymnastics/"
+pre = "/images/sportsicon128/91.png"
+weight = -100
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "jh_kendo"
+name = "剣道"
+url = "/jh_kendo/"
+pre = "/images/sportsicon128/40.png"
+weight = -100
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "jh_ekiden"
+name = "駅伝"
+url = "/jh_ekiden/"
+pre = "/images/sportsicon128/20.png"
+weight = -100
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "jh_skate"
+name = "スケート"
+url = "/jh_skate/"
+pre = "/images/sportsicon128/38.png"
+weight = -100
+parent = "jhclub"
+
+[[menu.main]]
+identifier = "jh_swimming"
+name = "水泳"
+url = "/jh_swimming/"
+pre = "/images/sportsicon128/48.png"
+weight = -100
+parent = "jhclub"
 # 陸上、水泳、サッカー、軟式野球、新体操、剣道、柔道、相撲、スキー、スケート、駅伝

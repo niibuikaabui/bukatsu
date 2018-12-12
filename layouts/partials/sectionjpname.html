@@ -1,8 +1,7 @@
 {{ $s := .Title }}
-{{ if eq $s "Softtennis" }}
-ソフトテニス
-{{ else if eq .Title "Volleyball" }}
-バレーボール
+{{ if eq $s "Jh_softtennis" }}ソフトテニス
+{{ else if eq .Title "Jh_volleyball" }}バレーボール
+{{ else if eq .Title "部活クラウド" }}TOP
 {{ else }}
-{{ $s }} なし
+{{ $s }} 
 {{ end }}

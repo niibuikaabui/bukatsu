@@ -32,12 +32,13 @@
 				<div class="card-deck">
 					{{ range .Children }}
 					<div class="col-sm-6 col-md-3">
-						<div class="card">
-							<!-- ここにaタグを入れたいけど、カードが崩れるので調査する -->
-								<img class="card-img-top" src="/images/sports/tennis_s.jpg" alt="{{ .Name }}">
-								<div class="card-body">
-									<h5 class="card-title">{{ .Name }}</h5>
-								</div>
+						<div class="card text-center">
+							<div class="d-none d-sm-block">
+								<img class="card-img-top" src="{{ .Pre }}" alt="{{ .Name }}">
+							</div>
+							<div class="card-body">
+								<a href="{{ .URL }}" class="btn btn-success my-1">{{ .Name }}</a>
+							</div>
 						</div>
 					</div>
 					{{ end }}
