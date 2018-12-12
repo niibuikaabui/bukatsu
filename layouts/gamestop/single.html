@@ -4,57 +4,46 @@
 {{ partial "head.html" . }}
 
 <body class="doc-body">
-    <a class="sr-only sr-only-focusable doc-skip" href="#doc-main-h1">
-        <div class="container">
-            <span class="doc-skip-text">Skip to main content</span>
-        </div>
-    </a>
-    <header class="navbar navbar-dark d-lg-none fixed-top toolbar-waterfall">
-        <button aria-controls="doc-navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler mr-3"
-            data-breakpoint="lg" data-target="#doc-navdrawer" data-toggle="navdrawer" data-type="permanent"><span class="navbar-toggler-icon"></span></button>
-        <a aria-label="Daemonite Material" class="mr-auto doc-logo" href="/material/">M</a>
-    </header>
-    {{ partial "menubar.html" . }}
-    <div class="jumbotron jumbotron-fluid mb-5 px-lg-3 doc-jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-9">
-                    <h1 class="typography-display-2" id="doc-main-h1">{{ .Title }}</h1>
-                    <p class="font-weight-light typography-title">{{ .Params.stdate }}～{{ .Params.eddate }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <main class="doc-main px-lg-3">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- <div class="col-xl-9"> -->
-                <div class="col">
-                    <!--ここにブログ本文-->
-                    分類: {{ with .Section }}{{ . }}{{ else }}なし{{ end }}zz
+	<a class="sr-only sr-only-focusable doc-skip" href="#doc-main-h1">
+		<div class="container">
+			<span class="doc-skip-text">Skip to main content</span>
+		</div>
+	</a>
+	<header class="navbar navbar-dark d-lg-none fixed-top toolbar-waterfall">
+		<button aria-controls="doc-navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler mr-3"
+				data-breakpoint="lg" data-target="#doc-navdrawer" data-toggle="navdrawer" data-type="permanent"><span class="navbar-toggler-icon"></span></button>
+		<a aria-label="Daemonite Material" class="mr-auto doc-logo" href="/material/">M</a>
+	</header>
+	{{ partial "menubar.html" . }}
+	<div class="jumbotron jumbotron-fluid mb-5 px-lg-3 doc-jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-9">
+					<h1 class="typography-display-2" id="doc-main-h1">{{ .Title }}</h1>
+					<p class="font-weight-light typography-title">{{ .Params.stdate }}～{{ .Params.eddate }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<main class="doc-main px-lg-3">
+		<div class="container">
+			<div class="row justify-content-center">
+				<!-- <div class="col-xl-9"> -->
+				<div class="col">
+					<!--ここにブログ本文-->
+					分類: {{ with .Section }}{{ . }}{{ else }}なし{{ end }}zz
 
-                    lender games<br>
-                    {{ $dataname := .Params.datafilename}}
-                    ↑mdファイルからdataパスを引き継ぐ方法を検討中<br>
-                    {{ range .Site.Data.hoge }}
-                    {{.name}}{{.url}}<br>
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- JavaScript -->
-    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <!-- Add Material JavaScript on top of Bootstrap JavaScript -->
-    <script src="./js/material.min.js"></script>
-    <!-- Additional JavaScript for documentation site -->
-    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-    <script src="./docs/js/docs.min.js"></script>
+					lender games<br>
+					{{ $dataname := .Params.datafilename}}
+					↑mdファイルからdataパスを引き継ぐ方法を検討中<br>
+					{{ range .Site.Data.hoge }}
+					{{.name}}{{.url}}<br>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</main>
+	{{ partial "footer.html" . }}
 </body>
 
 </html>
