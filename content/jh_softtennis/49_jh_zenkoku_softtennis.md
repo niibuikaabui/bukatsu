@@ -9,7 +9,6 @@ draft: false
 ---
 
 <div class="bd-content mb-5">
-    <p>修正チェック</p>
     <!-- <div class="bd-example bd-example-tabs"> -->
     <ul class="nav nav-justified nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
