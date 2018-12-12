@@ -25,49 +25,32 @@
 	<main class="doc-main px-lg-3">
 		<div class="container">
 			<div class="row justify-content-center">
-				{{ $currentPage := . }}
-				{{ range .Site.Menus.main }}
-				<h2>{{ .Name }}</h2>
-				{{ if .HasChildren }}
-				<div class="card-deck">
-					{{ range .Children }}
-					<div class="col-sm-6 col-md-3">
-						<div class="card text-center">
-							<div class="d-none d-sm-block">
-								<img class="card-img-top" src="{{ .Pre }}" alt="{{ .Name }}">
-							</div>
-							<div class="card-body">
-								<a href="{{ .URL }}" class="btn btn-success my-1">{{ .Name }}</a>
-							</div>
-						</div>
-					</div>
-					{{ end }}
-				</div>
-				{{end}}
-				{{end}}
-			</div>
-
-			<div class="row justify-content-center">
-				<!-- <div class="col-xl-9"> -->
-				<div class="col">
+				<div class="col-xl-11">
 					<div class="bd-content mb-5">
-						<h2>部活選択</h2>
-						<button type="button" class="btn btn-light btn-lg">ソフトテニス</button>
-						<button type="button" class="btn btn-light btn-lg">野球</button>
-						<button type="button" class="btn btn-light btn-lg">バスケットボール</button>
 						
-						<!-- </div> -->
+						{{ $currentPage := . }}
+						{{ range .Site.Menus.main }}
+						<h2>{{ .Name }}</h2>
+						{{ if .HasChildren }}
+						<div class="card-columns">
+							{{ range .Children }}
+							<a href="{{ .URL }}">
+							<div class="card">
+								<img class="card-img-top" src="{{ .Pre }}" alt="{{ .Name }}">
+								<div class="card-body">
+									<p class="card-text">{{ .Name }}</p>
+								</div>
+							</div>
+							</a>
+							{{ end }}
+						</div>
+						{{end}}
+						{{end}}
 
 					</div>
-				<!-- </div>
-				<div class="col-xl-3 d-none d-xl-block">
-					<ul class="section-nav">
-						<li class="toc-entry toc-h2"><a href="#default-tabs">Default tabs</a></li>
-						<li class="toc-entry toc-h2"><a href="#fixed-tabs">Fixed tabs</a></li>
-						<li class="toc-entry toc-h2"><a href="#scrollable-tabs">Scrollable tabs</a></li>
-					</ul> -->
 				</div>
 			</div>
+
 		</div>
 	</main>
 
