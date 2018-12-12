@@ -28,7 +28,7 @@
 				<!-- <div class="col-xl-9"> -->
 				<div class="col">
 					<!--ここにブログ本文-->
-					分類: {{ with .Section }}{{ . }}{{ else }}なし{{ end }}zz
+					分類: {{ with .Section }}{{ . }}{{ else }}なし{{ end }}
 					
 					{{ range .Data.Pages.ByDate.Reverse }}
 					{{ .Render "games" }}
