@@ -1,0 +1,28 @@
+{
+	"chutairen": {
+		"name": "中学校体育連盟",
+		"child": {
+			"zenchu": {
+				"name": "北海道中学校体育連盟",
+				"url": "#"
+			},
+			"hokkaido": {
+				"name": "北海道中学校体育連盟",
+				"url": "#"
+			}
+		}
+	},
+	"softtennis": {
+		"name": "ソフトテニス",
+		"child": {
+			"zenchu": {
+				"name": "北海道テニス連盟",
+				"url": "#"
+			},
+			"hokkaido": {
+				"name": "北海道学生テニス",
+				"url": "#"
+			}
+		}
+	}
+}
