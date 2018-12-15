@@ -6,8 +6,10 @@ title = "部活クラウド"
 dateFormat = "2006/1/2/"
 googleAnalytics = "UA-130872035-1"
 
-[menu]
+[permalinks]
+post = "/:title/"
 
+[menu]
 [[menu.main]]
 identifier = "jhclub"
 name = "中学校部活"

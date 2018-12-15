@@ -1,0 +1,15 @@
+<div class="expansion-panel list-group-item">
+	<a aria-controls="collapse{{ .Get "no" }}" aria-expanded="false" class="expansion-panel-toggler collapsed" data-toggle="collapse"
+	 href="#collapse{{ .Get "no" }}" id="heading{{ .Get "no" }}">
+		{{ .Get "ptitle" }}
+		<div class="expansion-panel-icon ml-3 text-black-secondary">
+			<i class="collapsed-show material-icons">keyboard_arrow_down</i>
+			<i class="collapsed-hide material-icons">keyboard_arrow_up</i>
+		</div>
+	</a>
+	<div aria-labelledby="heading{{ .Get "no" }}" class="collapse" data-parent="#accordion{{ .Get "no" }}" id="collapse{{ .Get "no" }}">
+		<div class="expansion-panel-body">
+			{{ .Inner }}
+		</div>
+	</div>
+</div>
