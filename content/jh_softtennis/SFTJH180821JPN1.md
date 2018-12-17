@@ -7,7 +7,6 @@ categories: [softtennis]
 tags: [中学ソフトテニス]
 draft: false
 ---
-
 {{< expanel-head >}}
 
 {{< expanel-mid no="1" ptitle="男子団体" rsltimg1="../../images/kekka/SFTJH180821JPN11-001.jpg" >}}
