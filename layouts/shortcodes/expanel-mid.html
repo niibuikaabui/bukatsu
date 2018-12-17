@@ -10,6 +10,11 @@
 	<div aria-labelledby="heading{{ .Get "no" }}" class="collapse" data-parent="#accordion{{ .Get "no" }}" id="collapse{{ .Get "no" }}">
 		<div class="expansion-panel-body">
 			{{ .Inner }}
+			{{ if .Get "rsltimg1" }}<img src="{{ .Get "rsltimg1" }}" class="img-fluid" alt="Responsive image">{{ end }}
+			{{ if .Get "rsltimg2" }}<img src="{{ .Get "rsltimg2" }}" class="img-fluid" alt="Responsive image">{{ end }}
+			{{ if .Get "rsltimg3" }}<img src="{{ .Get "rsltimg3" }}" class="img-fluid" alt="Responsive image">{{ end }}
+			{{ if .Get "rsltimg4" }}<img src="{{ .Get "rsltimg4" }}" class="img-fluid" alt="Responsive image">{{ end }}
+			{{ if .Get "rsltimg5" }}<img src="{{ .Get "rsltimg5" }}" class="img-fluid" alt="Responsive image">{{ end }}
 		</div>
 	</div>
 </div>
