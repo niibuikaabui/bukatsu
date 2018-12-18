@@ -1,5 +1,5 @@
 #baseURL = "http://localhost:1313"
-baseURL = "https://bukatsu-cloud.netlify.com/"
+baseURL = "https://bukatsu.cloud/"
 # baseURL = "https://www.okinawa-dso.com/bukatsu"
 languageCode = "ja"
 title = "部活クラウド"
