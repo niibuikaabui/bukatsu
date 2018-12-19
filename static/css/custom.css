@@ -17,3 +17,22 @@
 .expansion-panel-body {
     padding: 1rem 1rem;
 }
+
+ul {
+	padding-left: 30px;
+  position: relative;
+}
+
+ul li {
+  /* line-height: 1.5; */
+  /* padding: 0.5em 0; */
+  list-style-type: none!important;
+}
+
+ul li:before {
+  font-family: "Material Icons";
+  content: "navigate_next";
+  position: absolute;
+  left : 0.5em;
+  color: rgb(7, 74, 100);
+}

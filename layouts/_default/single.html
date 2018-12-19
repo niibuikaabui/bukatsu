@@ -29,7 +29,9 @@
 					{{ range .Data.Pages.ByDate.Reverse }}
 					{{ .Render "games" }}
 					{{ end }}
+					<div class="bd-content mb-5">
 					{{ .Content }}
+					</div>
 				</div>
 			</div>
 		</div>

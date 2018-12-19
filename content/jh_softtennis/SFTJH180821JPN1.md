@@ -5,6 +5,7 @@ stdate: 2018/8/21
 eddate: 20018/8/23
 categories: [softtennis]
 tags: [中学ソフトテニス]
+url: "gemes/第49回全国中学校ソフトテニス大会"
 draft: false
 ---
 {{< expanel-head >}}
