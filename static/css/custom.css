@@ -1,3 +1,25 @@
+/* フォントの上書き↓ */
+html {
+  font-family:  "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.tooltip {
+    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.popover {
+    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+/* フォントの上書き↑ */
+
 @media (min-width: 540px) {
 	.card-columns {
 			column-count: 3;
