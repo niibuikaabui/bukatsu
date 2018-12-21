@@ -1,60 +1,95 @@
 /* フォントの上書き↓ */
 html {
-  font-family:  "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+	font-family:  "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
 
 body {
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    padding-top: 50px;
-    padding-bottom: 20px;
+	font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	line-height: 1.6;
+	color: rgba(48, 48, 48, 0.87);
 }
 
 .tooltip {
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 .popover {
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.4;
+}
+h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	padding: 0.4em 0.4em;/*文字の上下 左右の余白*/
+	color: #494949;/*文字色*/
+	background: #f4f4f4;/*背景色*/
+	border-left: solid 5px #7db4e6;/*左線*/
+	border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+.panel-title {
+	font-size: 1.2rem;
+	font-weight: 200;
+	color: #494949;
+	background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
 /* フォントの上書き↑ */
 
+/* トップページのパネル↓ */
 @media (min-width: 540px) {
 	.card-columns {
-			column-count: 3;
+		column-count: 3;
 	}
 }
 @media (min-width: 768px) {
 	.card-columns {
-			column-count: 4;
+		column-count: 4;
 	}
 }
 @media (min-width: 960px) {
 	.card-columns {
-			column-count: 5;
+		column-count: 6;
 	}
 }
 
 .expansion-panel-body {
-    padding: 1rem 1rem;
+	padding: 1rem 1rem;
+}
+.box{
+    padding:20px 0px;
 }
 
-ul {
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    /* padding:10px; */
+    margin:10px 0px;
+}
+/* トップページのパネル↑ */
+
+/* リストの変更↓ */
+.blog-content > ul {
 	padding-left: 30px;
-  position: relative;
+	position: relative;
 }
 
-ul li {
-  /* line-height: 1.5; */
-  /* padding: 0.5em 0; */
-  list-style-type: none!important;
+.blog-content > ul, li {
+	/* line-height: 1.5; */
+	/* padding: 0.5em 0; */
+	list-style-type: none!important;
 }
 
-ul li:before {
-  font-family: "Material Icons";
-  content: "navigate_next";
-  position: absolute;
-  left : 0.5em;
-  color: rgb(7, 74, 100);
+.blog-content > ul li:before {
+	font-family: "Material Icons";
+	content: "navigate_next";
+	position: absolute;
+	left : 0.5em;
+	color: rgb(7, 74, 100);
 }
+/* リストの変更↑ */

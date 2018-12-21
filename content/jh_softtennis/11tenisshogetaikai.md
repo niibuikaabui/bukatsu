@@ -5,7 +5,7 @@ stdate: 2018/8/10
 eddate: 20018/8/12
 categories: [softtennis]
 tags: [中学ソフトテニス]
-draft: false
+draft: true
 ---
 
 <div class="bd-content mb-5">

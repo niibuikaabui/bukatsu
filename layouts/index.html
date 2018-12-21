@@ -24,33 +24,32 @@
 	</div>
 	<main class="doc-main px-lg-3">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-xl-11">
-					<div class="bd-content mb-5">
-						
-						{{ $currentPage := . }}
-						{{ range .Site.Menus.main }}
-						<h2>{{ .Name }}</h2>
-						{{ if .HasChildren }}
-						<div class="card-columns">
-							{{ range .Children }}
-							<a href="{{ .URL }}">
-							<div class="card">
-								<img class="card-img-top" src="{{ .Pre }}" alt="{{ .Name }}">
-								<div class="card-body">
-									<p class="card-text">{{ .Name }}</p>
-								</div>
+			<!-- <div class="col-xl-9"> -->
+				<div class="bd-content mb-5">
+				{{ $currentPage := . }}
+				{{ range .Site.Menus.main }}
+				<!-- <div class="row"> -->
+					<h2>{{ .Name }}</h2>
+				<!-- </div> -->
+				<div class="row">
+					{{ if .HasChildren }}
+					{{ range .Children }}
+					<div class="col-lg-3 col-md-3 col-sm-4 col-6">
+						<a href="{{ .URL }}">
+						<div class="box-part text-center">
+							<img class="card-img-top" src="{{ .Pre }}" alt="{{ .Name }}">
+							<div class="title">
+								<div class="panel-title">{{ .Name }}</div>
 							</div>
-							</a>
-							{{ end }}
 						</div>
-						{{end}}
-						{{end}}
-
+						</a>
+					</div>
+					{{ end }}
+					{{ end }}
+					{{ end }}
 					</div>
 				</div>
-			</div>
-
+			<!-- </div> -->
 		</div>
 	</main>
 
